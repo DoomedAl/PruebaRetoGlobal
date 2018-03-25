@@ -6,8 +6,6 @@ filetef="../prog/JSONstructure.txt"
 comprobar=check.check()
 comprobar.addJsonStruct(filetef)
 
-
-#class Test_endpoint(object):
     
 def test_check_structure():
     req=requests.get('https://api.github.com/orgs/pytest-dev')
