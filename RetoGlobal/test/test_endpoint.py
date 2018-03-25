@@ -24,10 +24,9 @@ def test_check_content():
     (requests.get('https://api.github.com/orgs/pytest-dev').status_code, 200),
     (requests.get('https://api.github.com/orgs/pytest').status_code, 404),
     (requests.get('https://api.github.com/orgs/').status_code,404),
+    (requests.get('https://api.github.com/').status_code,200),
 ])
 def test_check_status(test_input,expected):
-    #req=requests.get('http://api.github.com/orgs/{0}'.format(test_input))
-    #assert req.status_code == expected
     assert check_status(test_input)== expected
 
 def check_status(test_input):
