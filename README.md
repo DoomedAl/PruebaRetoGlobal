@@ -1,6 +1,9 @@
 # PruebaRetoGlobal
 Este repositorio está enfocado a la prueba del framework PyTest realizando algunos test básicos sobre el endpoint https://api.github.com/orgs/pytest-dev
 
+Estos test se han enfocado solo para el endpoint indicado, por lo tanto la estructura del JSON deseada está almacenada en un fichero de texto con todos los campos que deberían de aparecer en el JSON(JSONstructure.txt), almacenado en el directorio prog. 
+Esto es debido a que si se quiere cambiar a la estructura de usuario solo se debería de actualizar dicho fichero con los campos correspondientes
+
 ## Como correr los test
 Una vez instalado PyTest y el paquete pytest-html para poder obtener el test report en html ya se puede proceder a ejecutar el test.
 
